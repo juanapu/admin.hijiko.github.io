@@ -28,11 +28,7 @@ var config ={
 	entry:{
 		'common': ['./src/page/common/index.js'],
 		'index': "./src/page/index/index.js",
-		'transaction': "./src/page/transaction/index.js",
-		'confirm': "./src/page/confirm/index.js",
-		'result': "./src/page/result/index.js",
-		'tranList': "./src/page/tranList/index.js",
-		'tranDetail': "./src/page/tranDetail/index.js"
+		'admin': "./src/page/admin/index.js",
 	},
 	output: {
 		path: __dirname+'/dist',
@@ -75,11 +71,7 @@ var config ={
 	  },
 	plugins: [
 		new htmlWebpackPlugin(getHtmlConfig('index')),
-		new htmlWebpackPlugin(getHtmlConfig('transaction')),
-		new htmlWebpackPlugin(getHtmlConfig('confirm')),
-		new htmlWebpackPlugin(getHtmlConfig('result')),
-		new htmlWebpackPlugin(getHtmlConfig('tranList')),
-		new htmlWebpackPlugin(getHtmlConfig('tranDetail')),
+		new htmlWebpackPlugin(getHtmlConfig('admin')),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'common',
 			filename: 'page/common/index.js'

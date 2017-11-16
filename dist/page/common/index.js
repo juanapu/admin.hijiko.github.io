@@ -34,7 +34,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		6: 0
+/******/ 		2: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -147,7 +147,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -165,7 +165,7 @@
 
 
 var _this = this;
-var Hogan = __webpack_require__(11);
+var Hogan = __webpack_require__(10);
 var conf = {
 	serverHost : ''
 };
@@ -265,7 +265,8 @@ module.exports=_mm;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 2 */
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -277,11 +278,11 @@ module.exports=_mm;
 */
 
 
-__webpack_require__(10);
+__webpack_require__(9);
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -293,9 +294,9 @@ __webpack_require__(10);
 */
 
 
-__webpack_require__(14);
+__webpack_require__(13);
 var _mm=__webpack_require__(0);
-__webpack_require__(4);
+__webpack_require__(5);
 
 var header={
 	init: function(){
@@ -306,7 +307,7 @@ var header={
 		_this.checkInWechat();
 	},
 	insertImg: function(){
-		var img=__webpack_require__(15);
+		var img=__webpack_require__(14);
 		$(".headerWrap>nav.navbar>a.navbar-brand>img").attr('src',img);
 	},
 	bindEvent: function(){
@@ -370,7 +371,7 @@ $(function(){
 module.exports=header;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*!
@@ -3911,16 +3912,14 @@ var Popover = function ($) {
 
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3949,14 +3948,14 @@ $(function(){
 
 
 /***/ }),
-/* 9 */,
-/* 10 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -3976,14 +3975,14 @@ $(function(){
 
 // This file is for use with Node.js. See dist/ for browser files.
 
-var Hogan = __webpack_require__(12);
-Hogan.Template = __webpack_require__(13).Template;
+var Hogan = __webpack_require__(11);
+Hogan.Template = __webpack_require__(12).Template;
 Hogan.template = Hogan.Template;
 module.exports = Hogan;
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -4412,7 +4411,7 @@ module.exports = Hogan;
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -4759,13 +4758,13 @@ var Hogan = {};
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/logo.png";

@@ -40,20 +40,8 @@ div.pg1 .content{
 div.pg1{
 	background-image: url("../../resource/img/image1.jpg");
 }
-div.pg2{
-	background-image: url("../../resource/img/image2.jpg");
-	height: 0;
-	display: none;
-}
-div.pg3{
-	background-image: url("../../resource/img/image3.jpg");
-	height: 0;
-	display: none;
-}
-div.pg4{
-	background-image: url("../../resource/img/image4.jpg");
-	height: 0;
-	display: none;
+.description>h1{
+	color: #fff;
 }
 
 button.js-nxt,button.js-prev{

@@ -1,34 +1,33 @@
 webpackJsonp([0],[
 /* 0 */,
 /* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
 /* 7 */,
-/* 8 */,
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 __webpack_require__(1);
-__webpack_require__(6);
-//require('../common/navsimple/index.js');
 __webpack_require__(2);
+//require('../common/navsimple/index.js');
+__webpack_require__(3);
 __webpack_require__(0);
-var _header=__webpack_require__(3);
+var _header=__webpack_require__(4);
 var _mm=__webpack_require__(0);
-__webpack_require__(16);
-var loginHtml=__webpack_require__(17);  //get customized string module for login & register
-var registerHtml=__webpack_require__(18);
+__webpack_require__(15);
+var loginHtml=__webpack_require__(16);  //get customized string module for login & register
+var registerHtml=__webpack_require__(17);
 var img; // insert image to html code
 
 
@@ -50,7 +49,7 @@ var index={
 		var innerDiv=$(".main>.wrap").children("div");
 
 		for(var i=1;i<=innerDiv.length;i++){
-			img=__webpack_require__(19)("./pg"+i+'.png');
+			img=__webpack_require__(18)("./pg"+i+'.png');
 			$(".main>.wrap>.pg"+i+">.content>.description>img").attr('src',img);
 		};
 	},
@@ -76,17 +75,17 @@ $(function(){
 
 
 /***/ }),
+/* 9 */,
 /* 10 */,
 /* 11 */,
 /* 12 */,
 /* 13 */,
 /* 14 */,
-/* 15 */,
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(6);
-__webpack_require__(4);
+__webpack_require__(2);
+__webpack_require__(5);
 
 var marginTop,hideTop;
 
@@ -169,26 +168,26 @@ $(function(){
 });
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"loginForm\">\n\t<form>\n\t\t<div class=\"formItem userName\">\n\t\t\t<label for=\"userName\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"text\" placeholder=\"用户名\" name=\"userName\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem passWord\">\n\t\t\t<label for=\"passWord\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"password\" placeholder=\"密码\" name=\"passWord\" autofocus></input>\n\t\t</div>\n\t\t<input type=\"submit\" value=\"登录\"></input>\n\t</form>\n\t<div class=\"underLine\">\n\t\t<div class=\"register\">\n\t\t\t<span>还没有注册账号？</span><a class=\"jsRegister\" href=\"#\">注册</a>\n\t\t</div>\n\t\t<div class=\"resetPw\">\n\t\t\t<span>忘记密码？</span><a  class=\"jsResetPw\" href=\"#\">找回密码</a>\n\t\t</div>\n\t</div>\n</div>";
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"registerForm loginForm\">\n\t<form>\n\t\t<div class=\"formItem email\">\n\t\t\t<label for=\"email\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"email\" placeholder=\"注册邮箱\" name=\"email\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem userName\">\n\t\t\t<label for=\"userName\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"text\" placeholder=\"用户名\" name=\"userName\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem passWord\">\n\t\t\t<label for=\"passWord\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"password\" placeholder=\"密码\" name=\"passWord\" autofocus></input>\n\t\t</div>\n\t\t<input type=\"submit\" value=\"注册\"></input>\n\t</form>\n\t<div class=\"underLine\">\n\t\t<div class=\"login\">\n\t\t\t<span>已有账号？</span><a class=\"jsLogin\" href=\"#\">登录</a>\n\t\t</div>\n\t</div>\n</div>";
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./pg1.png": 20,
-	"./pg2.png": 21,
-	"./pg3.png": 22,
-	"./pg4.png": 23
+	"./pg1.png": 19,
+	"./pg2.png": 20,
+	"./pg3.png": 21,
+	"./pg4.png": 22
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -204,31 +203,31 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 19;
+webpackContext.id = 18;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg1.png";
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg2.png";
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg3.png";
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg4.png";
 
 /***/ })
-],[9]);
+],[8]);
