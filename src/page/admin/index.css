@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-10 15:15:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-17 09:58:19
+* @Last Modified time: 2017-11-17 12:24:35
 */
 html,body{
 	background-color: #fff;
@@ -81,6 +81,15 @@ html,body{
 }
 .admin .tbCl.id>span.id:active{
   text-decoration: underline;
+}
+.admin .tableHd input[type=checkbox],.admin .tableRow input[type=checkbox]{
+    margin-left: 1.5em;
+} 
+.admin .btmWrap>div{
+    display: inline-block;
+}
+.admin .btmWrap>div.pg{
+   padding-left: 10em;
 }
 
 /****************************************for mobile ************************************************/

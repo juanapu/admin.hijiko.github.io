@@ -8,7 +8,7 @@ webpackJsonp([1],{
 * @Author: Administrator
 * @Date:   2017-11-10 15:15:50
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-17 10:48:07
+* @Last Modified time: 2017-11-17 12:18:30
 */
 
 
@@ -26,12 +26,36 @@ var goDetail='./detail.html';
 var confirmPg={
 	init: function (){
 		var _this=this;
-		_this.bindEvent()
+		_this.bindEvent();
+		_this.pagination();
+		_this.pageLogic();
 	},
 	bindEvent: function(){
 		$(".admin .tbCl.id>span.id").click(function(){
 			window.location.href=goDetail;
 		});
+	},
+	pagination: function(){
+			var _this=this;
+			_this.pageLogic();/******use to divide pages*******/
+			$('#pagination-demo').twbsPagination({
+		        totalPages: 16,
+		        visiblePages: 6,
+		        next: 'Next',
+		        prev: 'Prev',
+		        onPageClick: function (event, page) {
+		            //fetch content and render here
+		            $('#page-content').text('Page ' + page) + ' content here';
+		        }
+		    });
+	},
+	pageLogic: function(){
+			var cmtNum=$('.commentListWrap .cmtInner').length;
+			if(!cmtNum){
+				$(".tranDetailPg .formWrap").addClass('rmMxHt');
+			}else{
+				$(".tranDetailPg .formWrap").removeClass('rmMxHt');
+			};
 	}
 };
 
