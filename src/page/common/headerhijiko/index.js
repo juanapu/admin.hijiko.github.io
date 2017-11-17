@@ -1,68 +1,14 @@
-webpackJsonp([1],{
-
-/***/ 23:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-* @Author: Administrator
-* @Date:   2017-11-10 15:15:50
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-17 10:48:07
-*/
-
-
-__webpack_require__(1);
-__webpack_require__(24);
-__webpack_require__(4);
-__webpack_require__(25);
-var _mm=__webpack_require__(0);
-
-
-/**url defination**/
-var goDetail='./detail.html';
-
-
-var confirmPg={
-	init: function (){
-		var _this=this;
-		_this.bindEvent()
-	},
-	bindEvent: function(){
-		$(".admin .tbCl.id>span.id").click(function(){
-			window.location.href=goDetail;
-		});
-	}
-};
-
-$(function(){
-	confirmPg.init();
-});
-
-/***/ }),
-
-/***/ 24:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 25:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*
 * @Author: Administrator
 * @Date:   2017-09-03 09:02:47
 * @Last Modified by:   Administrator
 * @Last Modified time: 2017-11-17 10:48:57
 */
+"use strict";
 
-
-__webpack_require__(26);
-var _mm=__webpack_require__(0);
-__webpack_require__(2);
+require('./index.css');
+var _mm=require('util/mm.js');
+require('bootstrap');
 
 var header={
 	init: function(){
@@ -73,7 +19,7 @@ var header={
 		_this.checkInWechat();
 	},
 	insertImg: function(){
-		var img=__webpack_require__(5);
+		var img=require('../../../resource/img/logo.png');
 		$(".headerWrap>nav.navbar>a.navbar-brand>img").attr('src',img);
 	},
 	bindEvent: function(){
@@ -135,14 +81,3 @@ $(function(){
 });
 
 module.exports=header;
-
-/***/ }),
-
-/***/ 26:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ })
-
-},[23]);

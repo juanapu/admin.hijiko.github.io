@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-10 15:15:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-16 18:22:21
+* @Last Modified time: 2017-11-17 09:58:19
 */
 html,body{
 	background-color: #fff;
@@ -67,7 +67,20 @@ html,body{
 }
 
 .admin .actionWrap{
-  padding-top: 3em;
+  padding: 3em;
+}
+.admin .tbCl.id>span.id{
+    color: #3398b0;
+    font-weight: 800;
+    text-shadow: none;
+    -webkit-transition: all 0.1s ease-out 0.1s;
+    transition: all 0.1s ease-out 0.1s;
+}
+.admin .tbCl.id>span.id:hover{
+    text-shadow: 1px 1px 1px #123841;
+}
+.admin .tbCl.id>span.id:active{
+  text-decoration: underline;
 }
 
 /****************************************for mobile ************************************************/

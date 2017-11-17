@@ -265,113 +265,7 @@ module.exports=_mm;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 2 */,
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-* @Author: Administrator
-* @Date:   2017-09-02 09:30:39
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-23 09:56:08
-*/
-
-
-__webpack_require__(9);
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-* @Author: Administrator
-* @Date:   2017-09-03 09:02:47
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-16 11:19:49
-*/
-
-
-__webpack_require__(13);
-var _mm=__webpack_require__(0);
-__webpack_require__(5);
-
-var header={
-	init: function(){
-		var _this=this;
-		_this.insertImg();
-		_this.bindEvent();
-		_this.pageMove();
-		_this.checkInWechat();
-	},
-	insertImg: function(){
-		var img=__webpack_require__(14);
-		$(".headerWrap>nav.navbar>a.navbar-brand>img").attr('src',img);
-	},
-	bindEvent: function(){
-		var _this=this;
-				$(".header button.search-btn").click(function(){
-			_this.searchSubmit();
-		});
-		$(".header .search-con input.search-input").focus(function(){
-			var contVal=$(this).attr("placeholder");
-			$(this).attr("placeholder","");
-			$(this).blur(function(){
-				$(this).attr("placeholder",contVal);
-			});
-		}).keyup(function(e){
-			if(e.keyCode===13){
-				_this.searchSubmit();
-			}
-		});
-		/**********mobile version menu bar*************/
-		$(".headerWrap .bar.mobile").click(function(e){
-			$(".bar.mobile>ul.navbar-nav").toggle('slow').siblings('a').toggleClass('showUl');
-			e.preventDefault(e);
-		});
-		$(".headerWrap .bar.pc ul li").click(function(){
-			$(this).addClass('active').siblings().removeClass('active');
-		});
-		$(".headerWrap .bar.mobile ul li").click(function(e){
-			e.stopPropagation(e);  
-			$(this).addClass('active').siblings().removeClass('active');
-		});
-	},
-	searchSubmit: function(){
-		var textVal=$(".header .search-con input.search-input").val();
-		if(textVal){
-			console.log(textVal);
-			window.location.href='./list.html?keyword='+textVal;
-		}
-	},
-	pageMove: function(){
-		$("a.navbar-brand").click(function(){
-			window.location.href="./index.html";
-		});
-	},
-	checkInWechat: function(){
-		var ua=window.navigator.userAgent.toLowerCase();
-		console.log(ua);
-		if((ua.match(/MicroMessenger/i))=="micromemessenger"){
-			return true;
-		}
-		else{
-			return false;
-		}
-
-	}
-};
-
-$(function(){
-	header.init();
-});
-
-module.exports=header;
-
-/***/ }),
-/* 5 */
+/* 2 */
 /***/ (function(module, exports) {
 
 /*!
@@ -3912,6 +3806,29 @@ var Popover = function ($) {
 
 
 /***/ }),
+/* 3 */,
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+* @Author: Administrator
+* @Date:   2017-09-02 09:30:39
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-23 09:56:08
+*/
+
+
+__webpack_require__(9);
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/logo.png";
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3928,15 +3845,26 @@ module.exports = __webpack_require__(7);
 
 __webpack_require__(1);
 //require('../css/style.css')
+//
+/***url define**/
+var host="http://hijikotest.com";
 
 var commonJs={
 	init: function(){
 		var _this=this;
-		FastClick.attach(document.body);  /****** mobile click event compatibility ******/
-		_this.pageMove();
+		_this.changeUrl();
 	},
-	pageMove: function(){
-		
+	changeUrl: function(){
+		var liLength=$(".headerWrap ul.rightBar").children('li').length;
+		var $li,newHref;
+		for(var i=0;i<liLength;i++){
+			$li=$($(".headerWrap ul.rightBar").children('li')[i]);
+			if(!$li.hasClass('active')){
+				console.log($li.children('a').attr('href'));
+				newHref=host+$li.children('a').attr('href');
+				$li.children('a').attr('href',newHref);
+			};
+		}
 	}
 };
 
@@ -4756,18 +4684,6 @@ var Hogan = {};
 
 })( true ? exports : Hogan);
 
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/logo.png";
 
 /***/ })
 /******/ ]);

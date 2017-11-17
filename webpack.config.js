@@ -28,7 +28,7 @@ var config ={
 	entry:{
 		'common': ['./src/page/common/index.js'],
 		'index': "./src/page/index/index.js",
-		'admin': "./src/page/admin/index.js",
+		'admin': "./src/page/admin/index.js"
 	},
 	output: {
 		path: __dirname+'/dist',
@@ -70,8 +70,8 @@ var config ={
 	    ]
 	  },
 	plugins: [
-		new htmlWebpackPlugin(getHtmlConfig('index')),
-		new htmlWebpackPlugin(getHtmlConfig('admin')),
+		new htmlWebpackPlugin(getHtmlConfig('index', '首页')),
+		new htmlWebpackPlugin(getHtmlConfig('admin','管理后台')),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'common',
 			filename: 'page/common/index.js'

@@ -1,33 +1,39 @@
-<%= require('html-loader!./layout/meta.html') %> 
-<body>
-		<%= require('html-loader!./layout/header.html') %>  
-	<div class="admin">
-		<div class="tableWrap">
-				<div class="tableHd">
-					<div class="tbCl"><input type="checkbox" /></div><div class="tbCl id">ID</div><div class="tbCl tranNm">Transaction</div><div class="tbCl date">Date</div><div class="tbCl reqInfo">Request Info</div><div class="tbCl recInfo">Receiver Info</div><div class="tbCl status">Status</div><div class="tbCl action">Action</div>
-				</div>
-				<div class="tableRow">
-					<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
-				</div>
-				<div class="tableRow">
-					<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
-				</div>
-				<div class="tableRow">
-					<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
-				</div>
-				<div class="actionWrap">
-					<div class="chgSta">
-						<select>
-							<option value="unpay">Waiting For pay</option>
-							<option value="wfRls">Paid&waiting for release money</option>
-							<option value="reqRefund">request for refund</option>
-							<option value="pending">pending</option>
-							<option value="refunded">refunded</option>
-							<option value="released">money released</option>
-						</select>
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>管理后台</title>
+			<%= require('html-loader!./layout/meta.html') %> 
+	</head>
+	<body>
+			<%= require('html-loader!./layout/headerHijiko.html') %>  
+		<div class="admin">
+			<div class="tableWrap">
+					<div class="tableHd">
+						<div class="tbCl"><input type="checkbox" /></div><div class="tbCl id">ID</div><div class="tbCl tranNm">Transaction</div><div class="tbCl date">Date</div><div class="tbCl reqInfo">Request Info</div><div class="tbCl recInfo">Receiver Info</div><div class="tbCl status">Status</div><div class="tbCl action">Action</div>
 					</div>
+					<div class="tableRow">
+						<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
+					</div>
+					<div class="tableRow">
+						<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
+					</div>
+					<div class="tableRow">
+						<div class="tbCl"><input type="checkbox"></input></div><div class="tbCl id"><span class="id">HJDSFLJALDJFLA JFJLADJFLAJFAJDFL DFJLADJF</span></div><div class="tbCl tranNm"><span class="tranNm">HERE IS THE TRANSACITION</span></div><div class="tbCl date">request date: <span class="date">2017-10-20</span></div><div class="tbCl reqInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: ￥<span class="rqsAmount">3000</span></div></div><div class="tbCl recInfo"><div class="inrWrap">User Name: <span class="usrNm">XIAOHUA</span></div><div class="inrWrap">Request Amount: <span class="alpyAccount">1234124@qq.com</span></div></div><div class="tbCl status"><span class="sta">Release after <span class="date">7</span>days</span></div><div class="tbCl action"><button class="btn cmnBtn">Released</button></div>	
+					</div>
+			</div>
+			<div class="actionWrap">
+				<div class="chgSta">
+					<select>
+						<option value="unpay">Waiting For pay</option>
+						<option value="wfRls">Paid&waiting for release money</option>
+						<option value="reqRefund">request for refund</option>
+						<option value="pending">pending</option>
+						<option value="refunded">refunded</option>
+						<option value="released">money released</option>
+					</select>
 				</div>
+			</div>
 		</div>
-	</div>
-		<%= require('html-loader!./layout/footer.html') %> 
-</body>
+			<%= require('html-loader!./layout/footer.html') %> 
+	</body>
+</html>

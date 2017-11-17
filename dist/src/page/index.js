@@ -1,13 +1,13 @@
 webpackJsonp([0],[
 /* 0 */,
 /* 1 */,
-/* 2 */
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 3 */,
 /* 4 */,
 /* 5 */,
 /* 6 */,
@@ -19,11 +19,11 @@ webpackJsonp([0],[
 
 
 __webpack_require__(1);
-__webpack_require__(2);
-//require('../common/navsimple/index.js');
 __webpack_require__(3);
+//require('../common/navsimple/index.js');
+__webpack_require__(4);
 __webpack_require__(0);
-var _header=__webpack_require__(4);
+var _header=__webpack_require__(13);
 var _mm=__webpack_require__(0);
 __webpack_require__(15);
 var loginHtml=__webpack_require__(16);  //get customized string module for login & register
@@ -79,13 +79,106 @@ $(function(){
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */,
-/* 14 */,
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+* @Author: Administrator
+* @Date:   2017-09-03 09:02:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-17 10:45:58
+*/
+
+
+__webpack_require__(14);
+var _mm=__webpack_require__(0);
+__webpack_require__(2);
+
+var header={
+	init: function(){
+		var _this=this;
+		_this.insertImg();
+		_this.bindEvent();
+		_this.pageMove();
+		_this.checkInWechat();
+	},
+	insertImg: function(){
+		var img=__webpack_require__(5);
+		$(".headerWrap>nav.navbar>a.navbar-brand>img").attr('src',img);
+	},
+	bindEvent: function(){
+		var _this=this;
+				$(".header button.search-btn").click(function(){
+			_this.searchSubmit();
+		});
+		$(".header .search-con input.search-input").focus(function(){
+			var contVal=$(this).attr("placeholder");
+			$(this).attr("placeholder","");
+			$(this).blur(function(){
+				$(this).attr("placeholder",contVal);
+			});
+		}).keyup(function(e){
+			if(e.keyCode===13){
+				_this.searchSubmit();
+			}
+		});
+		/**********mobile version menu bar*************/
+		$(".headerWrap .bar.mobile").click(function(e){
+			$(".bar.mobile>ul.navbar-nav").toggle('slow').siblings('a').toggleClass('showUl');
+			e.preventDefault(e);
+		});
+		$(".headerWrap .bar.pc ul li").click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		$(".headerWrap .bar.mobile ul li").click(function(e){
+			e.stopPropagation(e);  
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+	},
+	searchSubmit: function(){
+		var textVal=$(".header .search-con input.search-input").val();
+		if(textVal){
+			console.log(textVal);
+			window.location.href='./list.html?keyword='+textVal;
+		}
+	},
+	pageMove: function(){
+		$("a.navbar-brand").click(function(){
+			window.location.href="./index.html";
+		});
+	},
+	checkInWechat: function(){
+		var ua=window.navigator.userAgent.toLowerCase();
+		console.log(ua);
+		if((ua.match(/MicroMessenger/i))=="micromemessenger"){
+			return true;
+		}
+		else{
+			return false;
+		}
+
+	}
+};
+
+$(function(){
+	header.init();
+});
+
+module.exports=header;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(3);
 __webpack_require__(2);
-__webpack_require__(5);
 
 var marginTop,hideTop;
 
