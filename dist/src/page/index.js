@@ -2,32 +2,34 @@ webpackJsonp([0],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */,
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(1);
-__webpack_require__(3);
+__webpack_require__(2);
+__webpack_require__(7);
 //require('../common/navsimple/index.js');
-__webpack_require__(4);
+__webpack_require__(3);
 __webpack_require__(0);
-var _header=__webpack_require__(13);
+var _header=__webpack_require__(15);
 var _mm=__webpack_require__(0);
-__webpack_require__(15);
-var loginHtml=__webpack_require__(16);  //get customized string module for login & register
-var registerHtml=__webpack_require__(17);
+__webpack_require__(17);
+var loginHtml=__webpack_require__(18);  //get customized string module for login & register
+var registerHtml=__webpack_require__(19);
 var img; // insert image to html code
 
 
@@ -49,7 +51,7 @@ var index={
 		var innerDiv=$(".main>.wrap").children("div");
 
 		for(var i=1;i<=innerDiv.length;i++){
-			img=__webpack_require__(18)("./pg"+i+'.png');
+			img=__webpack_require__(20)("./pg"+i+'.png');
 			$(".main>.wrap>.pg"+i+">.content>.description>img").attr('src',img);
 		};
 	},
@@ -75,11 +77,11 @@ $(function(){
 
 
 /***/ }),
-/* 9 */,
-/* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,9 +93,9 @@ $(function(){
 */
 
 
-__webpack_require__(14);
+__webpack_require__(16);
 var _mm=__webpack_require__(0);
-__webpack_require__(2);
+__webpack_require__(1);
 
 var header={
 	init: function(){
@@ -104,7 +106,7 @@ var header={
 		_this.checkInWechat();
 	},
 	insertImg: function(){
-		var img=__webpack_require__(5);
+		var img=__webpack_require__(4);
 		$(".headerWrap>nav.navbar>a.navbar-brand>img").attr('src',img);
 	},
 	bindEvent: function(){
@@ -168,17 +170,17 @@ $(function(){
 module.exports=header;
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(3);
-__webpack_require__(2);
+__webpack_require__(7);
+__webpack_require__(1);
 
 var marginTop,hideTop;
 
@@ -261,26 +263,26 @@ $(function(){
 });
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"loginForm\">\n\t<form>\n\t\t<div class=\"formItem userName\">\n\t\t\t<label for=\"userName\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"text\" placeholder=\"用户名\" name=\"userName\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem passWord\">\n\t\t\t<label for=\"passWord\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"password\" placeholder=\"密码\" name=\"passWord\" autofocus></input>\n\t\t</div>\n\t\t<input type=\"submit\" value=\"登录\"></input>\n\t</form>\n\t<div class=\"underLine\">\n\t\t<div class=\"register\">\n\t\t\t<span>还没有注册账号？</span><a class=\"jsRegister\" href=\"#\">注册</a>\n\t\t</div>\n\t\t<div class=\"resetPw\">\n\t\t\t<span>忘记密码？</span><a  class=\"jsResetPw\" href=\"#\">找回密码</a>\n\t\t</div>\n\t</div>\n</div>";
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"registerForm loginForm\">\n\t<form>\n\t\t<div class=\"formItem email\">\n\t\t\t<label for=\"email\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"email\" placeholder=\"注册邮箱\" name=\"email\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem userName\">\n\t\t\t<label for=\"userName\"><i class=\"fa fa-user-o\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"text\" placeholder=\"用户名\" name=\"userName\" autofocus></input>\n\t\t</div>\n\t\t<div class=\"formItem passWord\">\n\t\t\t<label for=\"passWord\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i>\n</label>\n\t\t\t<input type=\"password\" placeholder=\"密码\" name=\"passWord\" autofocus></input>\n\t\t</div>\n\t\t<input type=\"submit\" value=\"注册\"></input>\n\t</form>\n\t<div class=\"underLine\">\n\t\t<div class=\"login\">\n\t\t\t<span>已有账号？</span><a class=\"jsLogin\" href=\"#\">登录</a>\n\t\t</div>\n\t</div>\n</div>";
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./pg1.png": 19,
-	"./pg2.png": 20,
-	"./pg3.png": 21,
-	"./pg4.png": 22
+	"./pg1.png": 21,
+	"./pg2.png": 22,
+	"./pg3.png": 23,
+	"./pg4.png": 24
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -296,31 +298,31 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 18;
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg1.png";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg2.png";
+webpackContext.id = 20;
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg3.png";
+module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg1.png";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
+module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg2.png";
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg3.png";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/pg4.png";
 
 /***/ })
-],[8]);
+],[10]);

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-10 15:15:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-17 12:24:35
+* @Last Modified time: 2017-11-17 13:08:57
 */
 html,body{
 	background-color: #fff;
@@ -90,6 +90,9 @@ html,body{
 }
 .admin .btmWrap>div.pg{
    padding-left: 10em;
+}
+.admin span.pyMethold{
+  color: red;
 }
 
 /****************************************for mobile ************************************************/

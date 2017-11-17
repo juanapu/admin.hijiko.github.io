@@ -34,7 +34,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		2: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -147,7 +147,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -165,7 +165,7 @@
 
 
 var _this = this;
-var Hogan = __webpack_require__(10);
+var Hogan = __webpack_require__(12);
 var conf = {
 	serverHost : ''
 };
@@ -260,12 +260,6 @@ module.exports=_mm;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 /*!
@@ -3806,8 +3800,13 @@ var Popover = function ($) {
 
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3819,31 +3818,34 @@ var Popover = function ($) {
 */
 
 
-__webpack_require__(9);
+__webpack_require__(11);
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = "https://juanapu.github.io/hijiko.github.io/dist/resource/img/logo.png";
 
 /***/ }),
-/* 6 */
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(7);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-__webpack_require__(1);
+__webpack_require__(2);
 //require('../css/style.css')
 //
 /***url define**/
@@ -3876,14 +3878,14 @@ $(function(){
 
 
 /***/ }),
-/* 8 */,
-/* 9 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -3903,14 +3905,14 @@ $(function(){
 
 // This file is for use with Node.js. See dist/ for browser files.
 
-var Hogan = __webpack_require__(11);
-Hogan.Template = __webpack_require__(12).Template;
+var Hogan = __webpack_require__(13);
+Hogan.Template = __webpack_require__(14).Template;
 Hogan.template = Hogan.Template;
 module.exports = Hogan;
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -4339,7 +4341,7 @@ module.exports = Hogan;
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
